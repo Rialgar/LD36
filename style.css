@@ -1,0 +1,74 @@
+@import 'https://fonts.googleapis.com/css?family=Cormorant:600';
+
+body{
+    padding: 0;
+    margin:0;
+    overflow: hidden;
+    background-color: black;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    font-family: 'Cormorant', serif;
+    font-variant: small-caps;
+    font-size: 18px;
+    letter-spacing: 0.125em;
+}
+
+button {
+    color: black;
+    font-family: 'Cormorant', serif;
+    font-variant: small-caps;
+    font-size: 18px;
+    letter-spacing: 0.125em;
+}
+
+div#popup{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 500px;
+    height: 250px;
+    background-color: black;
+    color: white;
+    border: 2px groove gold;
+    border-radius: 10px;
+    text-align: center;
+    display: -webkit-flex;
+    display:         flex;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    overflow-y: auto;
+}
+
+div#popup>div#popupText{
+    margin: 10px;
+    -webkit-flex-grow: 1;
+            flex-grow: 1;
+    -webkit-flex-shrink: 1;
+            flex-shrink: 1;
+}
+
+div#popup>div#popupButtons{
+    margin: 10px;
+    -webkit-flex-grow: 0;
+    flex-grow: 0;
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
+}
+
+div#popup button{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+div#popup table{
+    width: 100%;
+}
+
+div#popup td{
+    padding: 4px;
+}
+
+div#popup tr:nth-of-type(2n){
+    background-color: #222222;
+}
